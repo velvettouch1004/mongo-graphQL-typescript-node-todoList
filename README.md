@@ -30,33 +30,9 @@ REDIS_PORT=6379
 REDIS_HOST=localhost
 MONGODB_URI=mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false
 ============================================================
-===== project structures
-├── src                        # Where your source code lives
-│   ├── bootstrap              # Bootstrapping and loading of the API dependencies (Express, Apollo, Database, ...)
-│   ├── entities               # Used to generate typing, schemas and ORM models
-│   ├── modules                # Business logic of the app divided by domain (eg: User, Post, Todo)
-│   ├── tests                  # Where all our testing strategy lives
-│   ├── utils                  # Collection of utils function that we use in the project
-│   ├── config.ts              # Config of the app, sourced by environment variables
-│   └── index.ts               # Entry point of the API
-│
-├── jest-mongodb-config.js     # Optional if you don't use MongoDB!
-├── jest.config.js             # Jest configuration
-├── docker-compose.yml         # Docker compose configuration (Optional !)
-├── .env.example               # Example of what your .env file should look like
-├── .gitignore                 # Standard gitignore file
-├── package.json               # Node module dependencies
-├── README.md                  # Simple readme file
-└── tsconfig.json              # TypeScript compiler options
+
 ================================================================================
-===== module structure
-├── src
-│   └── modules
-│       └── user               # Module name
-│           ├── input.ts       # Input validation for mutations and queries using class-validator
-│           ├── model.ts       # Database model
-│           ├── resolver.ts    # GraphQL revolver
-│           └── service.ts     # Business logic of your app
+
 ================================================================================
 npm start
 ===========playground screen
