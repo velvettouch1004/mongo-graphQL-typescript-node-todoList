@@ -1,49 +1,58 @@
-# Project Title
+# mongo graphQL typescript node-js todoList
 
-One Paragraph of project description goes here
+graphql
+appolo
+mongoose
+node js
+typescript 
+npm 
+mongo 
+docker docker-compose
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+an open source project 
 
 ### Prerequisites
+graphql
+appolo
+mongoose
+node js
+typescript 
+npm 
+mongo 
+docker docker-compose
 
-What things you need to install the software and how to install them
+### Installing dev mode
 
-```
-Give examples
-```
+clone or download the project  
+npm install or yarn install
+npm start 
 
-### Installing
+here is your services is running  🚀 🚀 🚀 🚀 🚀 
+http://localhost:5030/graphql
+ 
 
-A step by step series of examples that tell you how to get a development env running
+### using docker compose 
+docker-compose up -d 
+docker-compose down
 
-Say what the step will be
 
-```
-Give the example
-```
 
-And repeat
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+### creation  
 
 ```
-Give an example
+npm init -y   
 ```
 
+```
+mkdir src 
+``` 
+
+```
+touch index.ts  
+```
 ### And coding style tests
 
 Explain what these tests test and why
