@@ -1,29 +1,30 @@
 version: "3"
 services:
   # MongoDB container
-  database:
+  mongodb:
     image: "mongo:latest"
     container_name: "mongo-db-database"
     environment:
       - MONGO_INITDB_DATABASE=mongo-test-db
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=password
+      # - MONGO_INITDB_ROOT_USERNAME=admin
+      # - MONGO_INITDB_ROOT_PASSWORD=admin
     ports:
-      - "27017-27019:27017-27019"
+      - 27017:27017
     volumes:
       - ./data/mongo-db-volume:/data/db
     restart: always
- app:
-        build: .
-        depends_on:
-          - mongo-db-database
-        environment:
-          DATABASE_URL: db DATABASE_URL
-          NODE_ENV: development
-          PORT: 3000
-        ports:
-          - "3000:3000"
-        command: npm run dev
-        volumes:
-          - .:/app/
-          - /app/node_modules
+
+  nodets_graphql_mongo:
+    image: "ts-graphql-mongo:latest"
+    container_name: "ts_graphql_mongo"
+    environment:
+      - PORT=5030
+      - GRAPHQL_PATH=/graphql
+      - NODE_ENV=development
+      - REDIS_PORT=6379
+      - REDIS_HOST=localhost
+      - MONGODB_URI=mongodb://mongodb:27017/mongo-test-db
+    ports:
+        - 5030:5030
+
+    restart: always    

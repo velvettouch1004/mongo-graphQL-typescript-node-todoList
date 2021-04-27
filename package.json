@@ -1,7 +1,7 @@
 {
-  "name": "ts-graphql-starter",
+  "name": "typescript_nodejs_graphql_mongodb_todolist",
   "version": "1.0.0",
-  "description": "A GraphQL API starter using NodeJS, TypeScript and Apollo Server",
+  "description": "typescript node js graphql mongo db todo list",
   "main": "index.js",
   "scripts": {
     "start:dev": "ts-node-dev --respawn --transpileOnly ./src/index.ts",

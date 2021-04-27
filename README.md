@@ -44,9 +44,21 @@ http://localhost:5030/graphql
  
 
 ### using docker compose 
-docker-compose up -d \
-docker-compose down\
+build node ts image \
+```
+ sudo docker build  -t ts-graphql-mongo .
+ ```
+ 
+excute compose file 
 
+```
+sudo docker-compose up -d \
+```
+shut down  all containers \
+
+```
+sudo docker-compose down\
+```
 
 
 
