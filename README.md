@@ -22,6 +22,7 @@ typescript \
 npm \
 mongo \
 docker docker-compose\
+![Screenshot](sc1.png)
 
 ### confugure the env file 
 env file contains  projecect config\
@@ -52,16 +53,16 @@ build node ts image \
 excute compose file 
 
 ```
-sudo docker-compose up -d \
+sudo docker-compose up -d 
 ```
-shut down  all containers \
+shut down  all containers 
 
 ```
-sudo docker-compose down\
+sudo docker-compose down
 ```
 
 
-
+![Screenshot](sc2.png)
 ### creation  
 
 ```
