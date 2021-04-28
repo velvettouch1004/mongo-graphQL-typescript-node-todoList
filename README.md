@@ -1,4 +1,4 @@
-# mongo graphQL typescript node-js todoList
+# mongo graphQL typescript node-js todoList with docker-compose file
 
 graphql\
 appolo\
